@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mailer", "Mailer\Mailer.csproj", "{5D5D0F65-5400-4CA2-B39E-32B5EB027BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailerCLI", "MailerCLI\MailerCLI.csproj", "{088E6A90-6EA1-47D8-B79F-6F27D11B17B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D5D0F65-5400-4CA2-B39E-32B5EB027BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5D0F65-5400-4CA2-B39E-32B5EB027BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5D0F65-5400-4CA2-B39E-32B5EB027BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5D0F65-5400-4CA2-B39E-32B5EB027BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088E6A90-6EA1-47D8-B79F-6F27D11B17B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088E6A90-6EA1-47D8-B79F-6F27D11B17B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088E6A90-6EA1-47D8-B79F-6F27D11B17B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088E6A90-6EA1-47D8-B79F-6F27D11B17B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E6A54B1-D51F-47F2-908D-D576A2301D03}
+	EndGlobalSection
+EndGlobal
