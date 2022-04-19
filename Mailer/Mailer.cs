@@ -43,9 +43,9 @@ namespace Mailer
                     {
                         try
                         {
-                            Console.WriteLine("sending");
+                            //Console.WriteLine("sending");
                             status = client.Send(message);
-                            Console.WriteLine(status);
+                            //Console.WriteLine(status);
                             break;
                         }
                         catch (Exception ex)
@@ -53,7 +53,6 @@ namespace Mailer
                             Console.WriteLine(ex.Message);
                         }
                     }
-                    //TODO: Log email and final status
                     using StreamWriter file = new("log.txt", append: true);
                 string logEntry = DateTime.Now.ToString() + "\t"
                     + sender + ", " + username + "\t"

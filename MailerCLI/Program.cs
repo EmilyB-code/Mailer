@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Mailer;
+﻿using Mailer;
 
 const string receiver = "replace.me@bademail.com";
 
@@ -30,13 +29,13 @@ while (true)
         Console.WriteLine("To: "+ to + ", " + rec + "\nFrom: " + send + "\nSubject: " + sub + "\nBody: " + bod + "\nConfirm Y/N?");
         cmd = Console.ReadLine();
         if (cmd.ToLower().Equals("y")){
-            mailStatus = Mailer.Mailer.SendEmail(send, to, rec, sub, bod);
-            Console.WriteLine("request sent");
+            mailStatus = Task.Run(() => Mailer.Mailer.SendEmail(send, to, rec, sub, bod));
+            //Console.WriteLine("request sent");
         } else continue;
     } else if (cmd.Equals("qt"))
     {
         mailStatus = Task.Run(() => Mailer.Mailer.SendEmail("Rob Ott", "Emily", receiver, "Rapid Test Email", "The version of the test for sending a quick message without manual entry."));
-        Console.WriteLine("request sent");
+        //Console.WriteLine("request sent");
     }
 }
 if(mailStatus != null) await mailStatus;
